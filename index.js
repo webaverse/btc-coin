@@ -121,7 +121,7 @@ export default () => {
         dummy.rotation.x += timestamp * (i % 2 == 0 ? -1 : 1);
         //dummy.scale.y *= 0.95;
 
-        if (dummy.position.y < coinPosition.y || dummy.position.y > 10) {
+        if (dummy.position.y < 0 || dummy.position.y > 10) {
           
           // dummy.position.x = 1;
           // dummy.position.y = 1.5;
@@ -136,7 +136,7 @@ export default () => {
           dummy.scale.x=0;
           dummy.scale.y=0;
           dummy.scale.z=0;
-          app.remove( dummy );
+          //app.remove( dummy );
         }
         info.velocity[i].add(acc);
         
