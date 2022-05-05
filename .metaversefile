@@ -1,3 +1,5 @@
 {
+  "name": "btc-coin",
+  "description": "btc-coin",
   "start_url": "index.js"
 }
